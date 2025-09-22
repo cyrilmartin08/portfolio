@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyril Martin | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gradient-to-b from-white to-gray-50 text-gray-900 antialiased">
+
+  <!-- HEADER -->
+  <header class="max-w-5xl mx-auto px-6 py-8 flex items-center justify-between">
+    <h1 class="text-xl font-semibold">Cyril Martin</h1>
+    <nav class="flex items-center gap-4">
+      <a href="#projects" class="text-sm hover:underline">Projects</a>
+      <a href="#about" class="text-sm hover:underline">About</a>
+      <a href="#contact" class="text-sm hover:underline">Contact</a>
+      <a
+        href="/resume/Cyril_Martin_Resume.pdf"
+        class="ml-3 inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-900 text-white text-sm"
+        download
+      >
+        Resume
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="py-12 max-w-5xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Left -->
+      <div>
+        <p class="text-sm text-gray-500">Hi, I'm</p>
+        <h2 class="text-4xl font-extrabold mt-2">Cyril Martin</h2>
+        <p class="mt-4 text-gray-700 max-w-xl">
+          Full-stack developer and AI tinkerer — I build thoughtful web and
+          mobile experiences with a focus on clean UI, reliability, and
+          delightful interactions. Currently exploring AIML, computer vision and
+          generative systems.
+        </p>
+        <!-- Buttons -->
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="mailto:cyrilmartin.tech@gmail.com" class="px-4 py-2 rounded-lg border border-gray-200">Email</a>
+          <a href="https://github.com/cyrilmartin08" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200">GitHub</a>
+          <a href="https://www.linkedin.com/in/cyril-martin-32a990265/" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200">LinkedIn</a>
+        <!--  <a href="https://instagram.com/cyrilmartin08" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200">Instagram</a>
+          <a href="https://www.youtube.com/@CyrilsMelody" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200">YouTube</a> -->
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="flex justify-center">
+        <img src="/images/nemesia-flute-pic.jpg" alt="Cyril Martin" class="rounded-2xl shadow-md max-w-xs w-full">
+      </div>
+    </div>
+
+    <!-- Quick facts -->
+    <div class="mt-10 p-6 rounded-2xl bg-white shadow-md max-w-3xl mx-auto">
+      <h3 class="text-lg font-semibold">Quick facts</h3>
+      <ul class="mt-4 space-y-2 text-gray-700">
+        <li>📍 Bengaluru — Studying Information Science and Engineering at CIT</li>
+        <li>💼 Experience: THWorks (SDE Intern), Anay Group (Intern), GirlScript Summer of Code contributor</li>
+        <li>⚙️ Stack: React, Next.js, Node, Python, OpenCV, MongoDB</li>
+        <li>🏆 Ranked 814 / 27,000+ in GirlScript Summer of Code</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-8 max-w-5xl mx-auto px-6">
+    <h3 class="text-2xl font-bold">Projects</h3>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Project 1 -->
+      <article class="p-5 bg-white rounded-2xl shadow-sm border">
+        <h4 class="text-lg font-semibold">Cyril's Chaats</h4>
+        <p class="text-sm text-gray-500">Full Stack Food-Ordering Web App</p>
+        <p class="mt-3 text-gray-700">
+          Full-stack ordering platform with QR UPI payments, dynamic order forms and MongoDB Atlas for storage. Deployed on Vercel.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">JavaScript</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Node.js</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">MongoDB</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Vercel</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://cyrils-chaats.vercel.app" target="_blank" class="text-sm underline">Live</a>
+          <a href="https://github.com/cyrilmartin08/cyrils-chaats" target="_blank" class="text-sm underline">Code</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="p-5 bg-white rounded-2xl shadow-sm border">
+        <h4 class="text-lg font-semibold">PicTune</h4>
+        <p class="text-sm text-gray-500">AI Mood & Music Matcher</p>
+        <p class="mt-3 text-gray-700">
+          AI-powered responsive web app that analyzes images/videos to detect moods and recommends music. Uses OpenCV + Streamlit.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Python</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">OpenCV</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Streamlit</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://pictune-ai-c5ez.onrender.com/" target="_blank" class="text-sm underline">Live</a>
+          <a href="https://github.com/cyrilmartin08/pictune" target="_blank" class="text-sm underline">Code</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="p-5 bg-white rounded-2xl shadow-sm border">
+        <h4 class="text-lg font-semibold">CITech Buzz</h4>
+        <p class="text-sm text-gray-500">Notification App (React Native)</p>
+        <p class="mt-3 text-gray-700">
+          A mobile app delivering real-time academic & event notifications. Built with Expo and tested on Expo Go.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">React Native</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Expo</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">JavaScript</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://github.com/cyrilmartin08/citech-buzz" target="_blank" class="text-sm underline">Code</a>
+          <a href="https://youtu.be/sxdHspDO7nM" target="_blank" class="text-sm underline">Demo</a>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="p-5 bg-white rounded-2xl shadow-sm border">
+        <h4 class="text-lg font-semibold">AI Wildlife Detection</h4>
+        <p class="text-sm text-gray-500">Surveillance & Alert System (Ongoing)</p>
+        <p class="mt-3 text-gray-700">
+          Prototype using YOLO/Gemini API + OpenCV for detecting wild animals and geofenced alerts. Running as Colab prototypes.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Python</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">OpenCV</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">YOLO</span>
+          <span class="px-2 py-1 rounded-md bg-gray-100 border">Google Gemini API</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://colab.research.google.com/drive/1XSCksz9y_1bguOtLocvG19Aq-_PmGQoW" target="_blank" class="text-sm underline">Code</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-8 max-w-5xl mx-auto px-6">
+    <h3 class="text-2xl font-bold">About me</h3>
+    <div class="mt-4 text-gray-700 max-w-3xl">
+      <p>
+        I am a developer with hands-on experience building web and mobile
+        applications. I enjoy solving product-first engineering problems
+        and iterating quickly from prototype to production. My recent work
+        touches on AI-powered image analysis, real-time mobile notifications,
+        and full-stack web systems.
+      </p>
+      <h4 class="mt-4 font-semibold">Education</h4>
+      <p class="text-sm">
+        ISE — Cambridge Institute of Technology, Bengaluru — CGPA: 8.43 (Up
+        to 6th Sem)
+      </p>
+      <h4 class="mt-3 font-semibold">Experience & recognition</h4>
+      <ul class="list-disc list-inside text-sm mt-2 text-gray-700">
+        <li>Software Developer Intern — THWorks (Feb 2025 – Apr 2025)</li>
+        <li>Contributor — GirlScript Summer of Code (May 2024 – Aug 2024)</li>
+        <li>Summer Intern — Anay Group (May 2024 – July 2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-12 max-w-5xl mx-auto px-6">
+    <h3 class="text-2xl font-bold">Get in touch</h3>
+    <p class="mt-2 text-gray-700">
+      Feel free to email me or connect on my socials.
+    </p>
+    <div class="mt-6 flex gap-4 flex-wrap">
+      <a href="mailto:cyrilmartin.tech@gmail.com" class="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50">Email</a>
+      <a href="https://github.com/cyrilmartin08" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50">GitHub</a>
+      <a href="https://www.linkedin.com/in/cyril-martin-32a990265/" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50">LinkedIn</a>
+      <a href="https://instagram.com/cyrilmartin08" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50">Instagram</a>
+      <a href="https://www.youtube.com/@CyrilsMelody" target="_blank" class="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50">YouTube</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center text-sm text-gray-500">
+    &copy; <span id="year"></span> Cyril Martin
+  </footer>
+
+  <script>
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Simple fade-in animations using GSAP
+    gsap.from("header", { y: -50, opacity: 0, duration: 0.6 });
+    gsap.from("section", { opacity: 0, y: 20, duration: 0.6, stagger: 0.3 });
+  </script>
+</body>
+</html>
